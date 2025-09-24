@@ -5,73 +5,21 @@
     font-family: sans-serif;
 }
 
-.top-menu {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-.top-menu ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.top-menu li {
-    margin: 0 15px;
-}
-
-.top-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
 .top-menu a:hover,
 .top-menu a.active {
-    color: #FFD700;
-}
-
-.side-menu {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background: #f1f1f1;
-    padding: 20px;
-}
-
-.side-menu ul {
-    list-style: none;
-}
-
-.side-menu li {
-    margin: 15px 0;
-}
-
-.side-menu a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
+    color: #FFD700 !important;
 }
 
 .side-menu a:hover {
-    color: #0077cc;
-}
-
-.content {
-    margin-left: 220px;
-    padding: 20px;
+    color: #0077cc !important;
 }
 
 .auth-container {
+    min-height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 60px);
+    padding: 20px;
 }
 
 .auth-form {
@@ -86,61 +34,36 @@
 .auth-form h2 {
     margin-bottom: 20px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.btn-google {
+    background-color: #db4437;
+    border-color: #db4437;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+.btn-google:hover {
+    background-color: #c23321;
+    border-color: #c23321;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.btn-facebook {
+    background-color: #4267b2;
+    border-color: #4267b2;
 }
 
-.submit-btn {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 4px;
-    cursor: pointer;
+.btn-facebook:hover {
+    background-color: #365899;
+    border-color: #365899;
 }
 
-.submit-btn:hover {
-    background-color: #005fa3;
+.content {
+    margin-left: 250px;
+    padding: 20px;
 }
 
-.oauth-buttons {
-    text-align: center;
-    margin: 15px 0 5px;
-    color: #666;
-}
-
-.oauth-btn {
-    margin: 5px 0;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.oauth-btn.google {
-    background: #db4437;
-    color: white;
-}
-
-.oauth-btn.facebook {
-    background: #4267b2;
-    color: white;
+@media (max-width: 992px) {
+    .content {
+        margin-left: 0;
+    }
 }
